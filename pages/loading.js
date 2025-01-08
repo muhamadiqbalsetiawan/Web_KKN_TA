@@ -12,7 +12,7 @@ export default function Loading() {
           <div className="flex items-center justify-center">
             <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-iconHoverColor">
               <svg
-                className="w-full h-full text-primaryColor"
+                className="w-full h-full text-IjoRumput"
                 viewBox="0 0 100 100"
                 fill="none"
               >

@@ -485,7 +485,7 @@ const handleKelompokChange = (selectedOption) => {
     displayAdmin = (
       <>
         <SidebarAdmin />
-        <div className="bg-primaryColor h-72 md:w-full -z-20">
+        <div className="bg-IjoRumput h-72 md:w-full -z-20">
           <div className="absolute ml-32 px-6 md:px-0 md:top-8 md:left-36 md:ml-32 sm:ml-0 font-bold text-2xl md:text-5xl text-white">
             <h1>Daftar Mahasiswa</h1>
           </div>
@@ -511,7 +511,7 @@ const handleKelompokChange = (selectedOption) => {
 
               {/* Tombol "Export" */}
               <button
-                className="ml-3 px-6 py-2 bg-cyan-600 text-white  rounded-lg font-bold"
+                className="ml-3 px-6 py-2 bg-green-600 text-white  rounded-lg font-bold"
                 onClick={() => handleExport(selectedKkn)}
               >
                 Export
@@ -566,7 +566,7 @@ const handleKelompokChange = (selectedOption) => {
 
                 {/* Tombol "Export" */}
                 <button
-                  className="ml-3 px-6 py-2 bg-inputColor text-white  rounded-lg font-bold"
+                  className="ml-3 px-6 py-2 bg-[#899e81] text-white  rounded-lg font-bold"
                   onClick={() => handleExport(selectedKkn)}
                 >
                   Export
@@ -707,7 +707,7 @@ const handleKelompokChange = (selectedOption) => {
                 pageRangeDisplayed={3}
                 onPageChange={handlePageClick}
                 containerClassName={"pagination flex justify-center mt-8"}
-                activeClassName={"bg-blue-500 text-white px-3 py-1 rounded-md"}
+                activeClassName={"bg-green-700 text-white px-3 py-1 rounded-md"}
                 previousClassName={
                   "px-3 py-1 rounded-md border border-gray-300 mr-2"
                 }

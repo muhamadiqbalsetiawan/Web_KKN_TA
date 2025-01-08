@@ -134,7 +134,7 @@ export default function KelompokKKN() {
     if (tables2[0]?.kelompok_id !== null) {
       displayKelompok = (
         <>
-          <div className="absolute bg-primaryColor w-full h-72 -z-20"></div>
+          <div className="absolute bg-IjoRumput w-full h-72 -z-20"></div>
           <div className="flex flex-row justify-start">
             <div className="w-auto h-screen">
               <SidebarMahasiswa />
@@ -179,7 +179,7 @@ export default function KelompokKKN() {
                         <button
                           type="button"
                           onClick={() => handleOpenModal(id)}
-                          className="px-5 py-2 bg-sky-700 hover:bg-sky-900 font-bold text-white rounded-md text-base"
+                          className="px-5 py-2 bg-IjoRumput hover:bg-[#899e81] font-bold text-white rounded-md text-base"
                         >
                           Ajukan Ketua Kelompok
                         </button>
@@ -254,7 +254,7 @@ export default function KelompokKKN() {
                     <div className="box-border md:py-3 mb-3 lg:text-base text-sm overflow-x-auto">
                       <table className="w-full rounded-xl">
                         <thead>
-                          <tr className="bg-primaryColor text-white">
+                          <tr className="bg-IjoRumput text-white">
                             <th className="rounded-tl-lg p-2 lg:p-4">No</th>
                             <th className="px-6 p-2 lg:p-4">Profil</th>
                             <th className="px-6 p-2 lg:p-4">Nama</th>
@@ -326,7 +326,7 @@ export default function KelompokKKN() {
                               <button
                                 type="button"
                                 onClick={() => handleOpenModal(id)}
-                                className="px-5 py-2 bg-sky-700 hover:bg-sky-900 font-bold text-white rounded-md md:text-base lg:text-xl"
+                                className="px-5 py-2 bg-[#a2b69a] hover:bg-[#899e81]  font-bold text-white rounded-md md:text-base lg:text-xl"
                               >
                                 Ajukan Ketua Kelompok
                               </button>

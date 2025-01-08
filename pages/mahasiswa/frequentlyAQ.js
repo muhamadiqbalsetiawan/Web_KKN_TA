@@ -44,7 +44,7 @@ export default function FrequentlyAQ() {
   } else if (status === "authenticated" && role === "mahasiswa") {
     displayFaq = (
       <>
-        <div className="absolute bg-primaryColor w-full h-72 -z-20"></div>
+        <div className="absolute bg-IjoRumput w-full h-72 -z-20"></div>
         <div className="flex flex-row justify-start">
           <div className="md:w-auto h-screen">
             <SidebarMahasiswa />

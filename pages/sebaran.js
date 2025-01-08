@@ -70,7 +70,7 @@ export default function Sebaran() {
         <title>KKN UIN SUNAN GUNUNG DJATI BANDUNG</title>
       </Head>
       <Header />
-      <div className="w-full h-[160px] lg:h-[320px] bg-gradient-to-b from-cyan-700 absolute to-transparent z-30"></div>
+      <div className="w-full h-[160px] lg:h-[320px] bg-gradient-to-b from-green-900 absolute to-transparent z-30"></div>
       <div
         style={{ backgroundImage: "url(/images/2.jpg)" }}
         className="w-full h-[200px] md:h-[280px] lg:h-[360px] bg-center bg-cover duration-300 blur-sm relative"
@@ -106,7 +106,7 @@ export default function Sebaran() {
         <div className="px-10 py-7">
           <div className="overflow-x-auto shadow-md sm:rounded-lg">
             <table className="w-full text-lg font-medium text-left rtl:text-right text-gray-900">
-              <thead className="text-white uppercase bg-primaryColor text-xl">
+              <thead className="text-white uppercase bg-IjoRumput text-xl">
                 <tr>
                   <th scope="col" className="px-6 py-3">
                     No

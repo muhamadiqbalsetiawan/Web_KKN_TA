@@ -306,7 +306,7 @@ export default function KelompokKkn() {
       <>
         <SidebarAdmin />
 
-        <div className="bg-primaryColor h-72 md:w-full -z-20">
+        <div className="bg-IjoRumput h-72 md:w-full -z-20">
           <div className="absolute ml-32 px-6 md:px-0 md:top-8 md:left-36 md:ml-32 sm:ml-0 font-bold text-2xl md:text-5xl text-white">
             <h1>Daftar Kelompok KKN</h1>
           </div>
@@ -346,7 +346,7 @@ export default function KelompokKkn() {
 
             <div className="mt-6 pr-3">
               <button
-                className="bg-inputColor p-2 rounded-md font-semibold hover:bg-inputHoverColor text-white"
+                className="bg-IjoRumput p-2 rounded-md font-semibold hover:bg-[#899e81] text-white"
                 onClick={() => setShowModal(true)}
               >
                 Tambah Kelompok{" "}

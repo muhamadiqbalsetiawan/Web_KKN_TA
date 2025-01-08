@@ -58,7 +58,7 @@ export default function Dashboard() {
   } else if (status === "authenticated" && role === "mahasiswa") {
     displayDashboard = (
       <>
-        <div className="absolute bg-primaryColor w-full h-72 -z-20"></div>
+        <div className="absolute bg-IjoRumput w-full h-72 -z-20"></div>
         <div className="flex flex-row justify-start">
           <div className="md:w-auto h-screen">
             <SidebarMahasiswa />
@@ -79,7 +79,7 @@ export default function Dashboard() {
                   </div>
                 )}
                 <div className="mt-3 flex flex-row flex-wrap justify-around">
-                  <div className="lg:w-6/12 border-inputColor border rounded-lg">
+                  <div className="lg:w-6/12 border-IjoRumput border rounded-lg">
                     <picture>
                       <img
                         src="/images/broschure-dummy.png"

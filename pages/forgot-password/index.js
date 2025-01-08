@@ -29,7 +29,7 @@ const forgotPassword = () => {
           <div className="flex justify-center pt-5">
             <Link
               href="../login"
-              className="bg-inputColor hover:bg-inputHoverColor justify-items-center font-bold text-white text-2xl px-6 py-2 rounded-lg"
+              className="bg-IjoRumput hover:bg-[#899e81] justify-items-center font-bold text-white text-2xl px-6 py-2 rounded-lg"
             >
               Kembali
             </Link>

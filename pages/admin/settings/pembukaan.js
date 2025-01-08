@@ -161,7 +161,7 @@ export default function AjuanSurat() {
     displayAdmin = (
       <>
         <SidebarAdmin />
-        <div className="bg-primaryColor h-72 md:w-full -z-20">
+        <div className="bg-IjoRumput h-72 md:w-full -z-20">
           <div className="absolute ml-32 px-6 md:px-0 md:top-8 md:left-36 md:ml-32 sm:ml-0 font-bold text-2xl md:text-5xl text-white">
             <h1>Pembukaan Jenis KKN</h1>
           </div>

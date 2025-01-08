@@ -4,6 +4,10 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/router";
 
+import checkRateLimit from "../pages/api/get-ip";
+import Modal from "./modal";
+
+
 export default function Header() {
   const [mobileNav, setMobileNav] = useState(false);
   const [navbarBackground, setNavBackground] = useState(false);
@@ -29,12 +33,31 @@ export default function Header() {
   }, []);
 
   const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
+
+  const handleClick = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch("/api/get-ip");
+    if(response.status === 429){
+      setModalMessage("Terlalu Banyak Permintaan. Silahkan coba lagi nanti.");
+      setIsModalOpen(true);
+      return;
+    }
+
+    router.push('/login');
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <header
       className={
         navbarBackground
-          ? "fixed w-full z-50 bg-primaryColor shadow-md transition ease-in-out duration-700"
+          ? "fixed w-full z-50 bg-IjoRumput shadow-md transition ease-in-out duration-700"
           : "fixed w-full z-50 bg-transparent shadow-none transition ease-in-out duration-300"
       }
     >
@@ -130,8 +153,9 @@ export default function Header() {
             className={
               navbarBackground
                 ? "text-black bg-white py-1 md:py-2 px-3 md:px-8 rounded-xl md:rounded-full hover:bg-[#e5e2e2] text-[10px] md:text-lg transition ease-in-out duration-200"
-                : "text-white bg-inputColor py-1 md:py-2 px-3 md:px-8 rounded-xl md:rounded-full hover:bg-white hover:text-inputColor text-[10px] md:text-lg transition ease-in-out duration-200"
+                : "text-white bg-IjoRumput py-1 md:py-2 px-3 md:px-8 rounded-xl md:rounded-full hover:bg-white hover:text-IjoRumput text-[10px] md:text-lg transition ease-in-out duration-200"
             }
+            onClick={handleClick}
           >
             Login
           </Link>
@@ -144,7 +168,7 @@ export default function Header() {
           <div
             className={
               mobileNav
-                ? "fixed bg-primaryColor shadow-md right-0 top-0 w-screen h-screen ease-in-out duration-200 z-0"
+                ? "fixed bg-IjoRumput shadow-md right-0 top-0 w-screen h-screen ease-in-out duration-200 z-0"
                 : "absolute top-0 w-screen h-screen -right-[5700px] ease-in-out duration-1000 z-0"
             }
           >
@@ -176,6 +200,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal} message={modalMessage} />
     </header>
   );
 }

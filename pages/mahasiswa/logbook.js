@@ -234,7 +234,7 @@ export default function LogbookKKN() {
       if (grup.kelompok_id !== null) {
         displayLogbook = (
           <>
-            <div className="absolute bg-primaryColor w-full h-72 -z-20"></div>
+            <div className="absolute bg-IjoRumput w-full h-72 -z-20"></div>
             <div className="flex flex-row justify-start">
               <div className="w-auto h-screen">
                 <SidebarMahasiswa />
@@ -264,7 +264,7 @@ export default function LogbookKKN() {
                       <div className="flex flex-col justify-center md:justify-end px-2 py-1">
                         <button
                           type="button"
-                          className="text-xs md:text-base bg-inputColor hover:bg-inputHoverColor py-2 px-2 md:px-4 font-bold text-white flex flex-row justify-center items-center space-x-1 md:space-x-2 rounded-sm"
+                          className="text-xs md:text-base bg-[#42862c]  hover:bg-[#899e81]  py-2 px-2 md:px-4 font-bold text-white flex flex-row justify-center items-center space-x-1 md:space-x-2 rounded-sm"
                           onClick={handleOpenModal}
                         >
                           <PlusIcon
@@ -278,7 +278,7 @@ export default function LogbookKKN() {
                     <div className="box-border md:py-3 md:px-2 mb-3 lg:text-base text-xs md:text-sm overflow-x-auto font-medium">
                       <table className="w-full rounded-xl">
                         <thead>
-                          <tr className="bg-primaryColor text-white">
+                          <tr className="bg-IjoRumput text-white">
                             <th className="rounded-tl-lg p-1 lg:p-4">No</th>
                             <th className="px-6 p-2 lg:p-4">Hari, Tanggal</th>
                             <th className="px-6 p-2 lg:p-4">Lokasi</th>
@@ -308,7 +308,7 @@ export default function LogbookKKN() {
                                 <td className="py-1 px-2 lg:p-3">
                                   {item.target}
                                 </td>
-                                <td className="py-1 px-2 lg:p-3 text-blue-600 hover:underline hover:text-blue-800">
+                                <td className="py-1 px-2 lg:p-3 text-green-600 hover:underline hover:text-green-800">
                                   <Link href={item.link} target="_blank">
                                     {" "}
                                     {item.link}{" "}

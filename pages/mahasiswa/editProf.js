@@ -105,7 +105,7 @@ export default function EditProfil() {
     } else {
       displayEditProfil = (
         <>
-          <div className="absolute bg-primaryColor w-full h-72 -z-20"></div>
+          <div className="absolute bg-IjoRumput w-full h-72 -z-20"></div>
           <div className="flex flex-row justify-start">
             <div className="h-screen w-screen overflow-auto grow">
               <div className="px-5 md:px-12 pb-5 w-auto">
@@ -126,7 +126,7 @@ export default function EditProfil() {
                       </h1>
                       <span
                         id="nim"
-                        className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                       >
                         {formData.nim}
                       </span>
@@ -137,7 +137,7 @@ export default function EditProfil() {
                       </h1>
                       <span
                         id="name"
-                        className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                       >
                         {formData.nama}
                       </span>
@@ -153,7 +153,7 @@ export default function EditProfil() {
                         </label>
                         <select
                           id="gender"
-                          className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                          className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                           value={formData.jk || ""}
                           required
                           onChange={(e) =>
@@ -174,7 +174,7 @@ export default function EditProfil() {
                         </h1>
                         <span
                           id="gender"
-                          className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                          className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                         >
                           {formData.jk}
                         </span>
@@ -191,7 +191,7 @@ export default function EditProfil() {
                         <input
                           type="text"
                           id="jurusan"
-                          className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                          className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                           required
                           value={formData.nama_jur}
                           onChange={(e) =>
@@ -209,7 +209,7 @@ export default function EditProfil() {
                         </h1>
                         <span
                           id="prodi"
-                          className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                          className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                         >
                           {formData.nama_jur}
                         </span>
@@ -226,7 +226,7 @@ export default function EditProfil() {
                         <input
                           type="text"
                           id="fakultas"
-                          className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                          className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                           required
                           value={formData.fakultas}
                           onChange={(e) =>
@@ -244,7 +244,7 @@ export default function EditProfil() {
                         </h1>
                         <span
                           id="fakultas"
-                          className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                          className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                         >
                           {formData.fakultas}
                         </span>
@@ -262,7 +262,7 @@ export default function EditProfil() {
                         <input
                           type="text"
                           id="universitas"
-                          className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                          className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                           required
                           value={formData.universitas}
                           onChange={(e) =>
@@ -280,7 +280,7 @@ export default function EditProfil() {
                         </h1>
                         <span
                           id="universitas"
-                          className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                          className="w-full px-3 py-2 text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                         >
                           {formData.universitas}
                         </span>
@@ -297,7 +297,7 @@ export default function EditProfil() {
                       <input
                         type="text"
                         id="telp"
-                        className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                         required
                         value={formData.telepon_seluler}
                         maxLength={16}
@@ -320,7 +320,7 @@ export default function EditProfil() {
                         type="text"
                         id="telp"
                         maxLength={16}
-                        className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full text-sm shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-sm focus:ring-green-500 focus:border-green-500"
                         required
                         value={formData.telepon_wali}
                         onChange={(e) =>
@@ -334,7 +334,7 @@ export default function EditProfil() {
                     <div className="mt-5">
                       <button
                         type="submit"
-                        className="px-4 py-2 bg-inputColor hover:bg-inputHoverColor text-white rounded-md font-bold"
+                        className="px-4 py-2 bg-IjoRumput hover:bg-[#899e81] text-white rounded-md font-bold"
                       >
                         SIMPAN
                       </button>

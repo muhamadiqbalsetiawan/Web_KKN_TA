@@ -20,7 +20,7 @@ const loginFailed = () => {
         <div className="py-7">
           <Link
             href="/login"
-            className="bg-inputColor hover:bg-inputHoverColor px-7 py-2 rounded-md font-bold text-2xl text-white"
+            className="bg-IjoRumput hover:bg-IjoRumput px-7 py-2 rounded-md font-bold text-2xl text-white"
           >
             Kembali
           </Link>

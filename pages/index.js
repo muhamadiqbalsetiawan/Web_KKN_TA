@@ -92,9 +92,9 @@ export default function Home() {
       <main>
         {/* Atas */}
         <section>
-          <div className="h-[240px] w-full bg-gradient-to-b from-primaryColor to-transparent absolute z-30"></div>
-          <div className="h-[80px] w-full bg-gradient-to-b from-primaryColor to-transparent absolute z-20"></div>
-          <div className="h-[60px] w-full bg-gradient-to-b from-primaryColor to-transparent absolute z-10"></div>
+          <div className="h-[240px] w-full bg-gradient-to-b from-IjoRumput to-transparent absolute z-30"></div>
+          <div className="h-[80px] w-full bg-gradient-to-b from-IjoRumput to-transparent absolute z-20"></div>
+          <div className="h-[60px] w-full bg-gradient-to-b from-IjoRumput to-transparent absolute z-10"></div>
           <div
             style={{ backgroundImage: `url(${imageSlides[currentIndex].url})` }}
             className="w-full xl:h-screen bg-center bg-cover bg-no-repeat duration-300 absolute -z-10 opacity-10 blur-sm"
@@ -103,21 +103,7 @@ export default function Home() {
             style={{ backgroundImage: `url(${imageSlides[currentIndex].url})` }}
             className="h-[260px] bg-white text-left p-4 md:text-right pt-32 md:pt-[360px] md:h-[560px] lg:h-[650px] xl:h-screen bg-bottom bg-contain bg-no-repeat duration-300 relative"
           >
-            {/* <div className="absolute w-[300px] h-[220px]  bg-[#80B156]/30 blur-3xl md:w-[860px] md:h-[320px] md:ml-auto md:right-0 rounded-[10%]"></div>
-            <div className="relative md:-mr-4 md:pr-12 md:py-10 xl:w-[920px] md:ml-auto">
-              <h1 className="font-bold md:font-extrabold text-6xl md:text-8xl text-white">
-                Kuliah Kerja Nyata
-              </h1>
-              <h3 className="font-medium text-white flex flex-col text-base md:text-3xl leading-4 md:leading-9 mt-4 md:mt-9 pb-12 md:pb-4">
-                <span className="font-bold md:text-4xl">
-                  Assalamu&apos;alaikum
-                </span>
-                <span>
-                  Selamat Datang di Situs Resmi Kuliah Kerja Nyata (KKN)
-                </span>
-                <span>Universitas Islam Negeri Sunan Gunung Djati Bandung</span>
-              </h3>
-            </div> */}
+            
           </div>
         </section>
 
@@ -127,10 +113,10 @@ export default function Home() {
             <div className="bg-[url('/images/what.jpg')] w-[240px] md:w-1/3 h-[240px] md:h-[420px] bg-cover bg-center rounded-lg mb-3 md:mb-0"></div>
             <div className="w-screen md:w-[55%]">
               <div className="flex flex-row space-x-[2px] md:space-x-4 ml-1 md:ml-0">
-                <div className="w-1 h-1 md:w-4 md:h-4 bg-[#0090D7] rounded-full"></div>
-                <div className="w-1 h-1 md:w-4 md:h-4 bg-[#368FBB] rounded-full"></div>
-                <div className="w-1 h-1 md:w-4 md:h-4 bg-[#43AFE6] rounded-full"></div>
-                <div className="w-1 h-1 md:w-4 md:h-4 bg-[#2C7599] rounded-full"></div>
+                <div className="w-1 h-1 md:w-4 md:h-4 bg-[#48d700] rounded-full"></div>
+                <div className="w-1 h-1 md:w-4 md:h-4 bg-[#43bb36] rounded-full"></div>
+                <div className="w-1 h-1 md:w-4 md:h-4 bg-[#43e661] rounded-full"></div>
+                <div className="w-1 h-1 md:w-4 md:h-4 bg-[#2c9942] rounded-full"></div>
               </div>
               <div className="font-medium text-lg lg:text-2xl">
                 <h2 className="font-bold text-3xl mb-3 lg:mb-7 lg:text-6xl md:mt-2">
@@ -149,7 +135,7 @@ export default function Home() {
                   semester 5 atau 6. Mereka akan menjalankan kegiatan belajar,
                   mengabdi, mengajar, dan berbaur dengan masyarakat dimana
                   mereka melakukan KKN. Untuk panduan KKN bisa lihat pada{"  "}
-                  <Link href="/" className="underline hover:text-blue-700">
+                  <Link href="/" className="underline hover:text-green-700">
                     halaman berikut
                   </Link>
                   .
@@ -163,10 +149,10 @@ export default function Home() {
         <section className="mt-0 bg-gray-50 py-5 mb-4 md:mb-0">
           <div className="text-left px-2 lg:px-12 lg:py-10">
             <div className="flex flex-row space-x-[2px] md:space-x-4 ml-1 md:ml-6">
-              <div className="w-1 h-1 md:w-4 md:h-4 bg-[#0090D7] rounded-full"></div>
-              <div className="w-1 h-1 md:w-4 md:h-4 bg-[#368FBB] rounded-full"></div>
-              <div className="w-1 h-1 md:w-4 md:h-4 bg-[#43AFE6] rounded-full"></div>
-              <div className="w-1 h-1 md:w-4 md:h-4 bg-[#2C7599] rounded-full"></div>
+              <div className="w-1 h-1 md:w-4 md:h-4 bg-[#48d700] rounded-full"></div>
+              <div className="w-1 h-1 md:w-4 md:h-4 bg-[#43bb36] rounded-full"></div>
+              <div className="w-1 h-1 md:w-4 md:h-4 bg-[#43e661] rounded-full"></div>
+              <div className="w-1 h-1 md:w-4 md:h-4 bg-[#2c9942] rounded-full"></div>
             </div>
             <h1 className="font-bold text-3xl ml-1 -mt-1 md:mt-5 md:ml-9 lg:text-6xl">
               Sebaran Lokasi
@@ -183,13 +169,13 @@ export default function Home() {
 
               <Link
                 href={"/sebaran"}
-                className="w-44 font-medium text-xl text-inputColor py-2 rounded-md flex items-end space-x-3 hover:px-4 hover:bg-inputColor hover:text-white ease-in-out duration-100"
+                className="w-44 font-medium text-xl text-IjoRumput py-2 rounded-md flex items-end space-x-3 hover:px-4 hover:bg-IjoRumput hover:text-white ease-in-out duration-100"
               >
                 <h2>Selengkapnya</h2>
                 <ChevronRightIcon className="h-6" />
               </Link>
             </div>
-            <div className="md:w-1/2 mt-10 md:mt-0 bg-inputHoverColor p-1 rounded-md">
+            <div className="md:w-1/2 mt-10 md:mt-0 bg-green-700 p-1 rounded-md">
               <Map />
             </div>
           </div>
@@ -198,7 +184,7 @@ export default function Home() {
       <footer className="mt-5 text-base lg:text-lg font-medium">
         <div className="h-[720px] md:h-[450px] xl:h-[400px]">
           <div className="absolute -z-10 bg-fixed bg-cover bg-top w-full h-[720px] md:h-[450px] xl:h-[400px] bg-[url(/images/Kampus2Depan.jpeg)]"></div>
-          <div className="bg-primaryColor bg-opacity-90 h-full flex flex-row flex-wrap px-6 py-10 space-y-6 lg:space-y-0 xl:space-y-4 lg:px-20 xl:px-32 xl:py-16 justify-between">
+          <div className="bg-IjoRumput bg-opacity-90 h-full flex flex-row flex-wrap px-6 py-10 space-y-6 lg:space-y-0 xl:space-y-4 lg:px-20 xl:px-32 xl:py-16 justify-between">
             <div className="1/5 lg:w-1/4 flex justify-center mr-0">
               <picture>
                 <img

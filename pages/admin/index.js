@@ -68,7 +68,7 @@ export default function Login() {
       />
       <div className="h-full w-full flex">
         <div className="absolute -z-10 bg-fixed bg-cover w-screen h-screen bg-bottom bg-[url(/images/Kampus2Depan.jpeg)]"></div>
-        <div className="h-screen relative z-0 w-full bg-primaryColor bg-opacity-85 md:bg-opacity-90">
+        <div className="h-screen relative z-0 w-full bg-IjoRumput bg-opacity-85 md:bg-opacity-90">
           <div className="pl-9 pt-8">
             <picture>
               <img
@@ -147,7 +147,7 @@ export default function Login() {
                 </div>
 
                 <div className="mt-6 flex justify-center">
-                  <button className="w-[40%] py-2 tracking-wide text-white font-bold transition-colors duration-200 transform bg-inputColor rounded-md hover:bg-inputHoverColor focus:outline-none focus:bg-[#8FBB63]">
+                  <button className="w-[40%] py-2 tracking-wide text-white font-bold transition-colors duration-200 transform bg-[#709e5d] rounded-md hover:bg-[#899e81]  focus:outline-none focus:bg-[#8FBB63]">
                     Login
                   </button>
                 </div>

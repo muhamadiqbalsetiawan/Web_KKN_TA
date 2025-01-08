@@ -168,7 +168,7 @@ export default function LaporanKKN() {
       if (grup.kelompok_id !== null) {
         displayLaporan = (
           <>
-            <div className="absolute bg-primaryColor w-full h-72 -z-20"></div>
+            <div className="absolute bg-IjoRumput w-full h-72 -z-20"></div>
             <div className="flex flex-row justify-start">
               <div className="h-screen">
                 <SidebarMahasiswa />

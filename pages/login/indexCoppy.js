@@ -11,8 +11,6 @@ import { useRouter } from "next/router";
 import Loading from "../loading";
 import ErrorModal from "@/components/modalerror";
 
-// import { rateLimitMiddleware } from "@/lib/rateLimit";
-
 export default function Login() {
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
   const [userType, setUserType] = useState("mahasiswa");
@@ -67,14 +65,6 @@ export default function Login() {
 
     if (username.trim() === "" || password.trim() === "") {
       setIsModal(true);
-      return;
-    }
-
-    // Panggil API untuk memeriksa rate limit
-    const rateLimitResponse = await fetch("/api/get-ip");
-    if (rateLimitResponse.status === 429) {
-      // Menampilkan modal jika terlalu banyak permintaan
-      alert("Terlalu Banyak Permintaan. Silahkan coba lagi nanti."); // Anda bisa menggunakan logika modal sesuai kebutuhan
       return;
     }
 
@@ -152,17 +142,41 @@ export default function Login() {
           }
         } catch (error) {
           console.error("Error checking username:", error);
-          handleRateLimit();
           window.location.href = "/login"; // Redirect to the protected page
         }
       } else {
         // Handle login error
         console.log("Login error:", result.error);
-        handleRateLimit();
         window.location.href = "/login-failed"; // Redirect to the protected page
       }
     }
   };
+
+  // const handleLoginDosen = async (e) => {
+  //   e.preventDefault();
+
+  //   if (token != null) {
+  //     // Attempt to sign in using the Credentials provider
+  //     const result = await signIn("credentials", {
+  //       username,
+  //       password,
+  //       token,
+  //       redirect: false, // Prevent automatic redirection
+  //     });
+
+  //     if (!result.error) {
+  //       // Successful login
+  //       console.log("Session:", result.session);
+  //       window.location.href = "/login/success/"; // Redirect to the protected page
+  //     } else {
+  //       // Handle login error
+  //       console.log("Login error:", result.error);
+  //       window.location.href = "/login-failed"; // Redirect to the protected page
+  //     }
+  //   } else {
+  //     console.log("Login Gagal");
+  //   }
+  // };
 
   if (status === "loading") {
     return <Loading />;
